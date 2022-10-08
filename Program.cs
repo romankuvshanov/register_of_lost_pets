@@ -16,7 +16,7 @@ namespace PIS_20_01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AuthForm());
+            Application.Run(new Form1());
         }
     }
 }

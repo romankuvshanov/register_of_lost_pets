@@ -1,7 +1,7 @@
 ﻿
 namespace PIS_20_01
 {
-    partial class AuthForm
+    partial class Form1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
