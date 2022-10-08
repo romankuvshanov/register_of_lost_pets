@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PIS_20_01
 {
-    public partial class Form1 : Form
+    public partial class AuthForm : Form
     {
-        public Form1()
+        public AuthForm()
         {
             InitializeComponent();
         }

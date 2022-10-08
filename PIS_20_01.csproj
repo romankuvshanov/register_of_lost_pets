@@ -46,69 +46,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllAdsForm.cs">
+    <Compile Include="Controllers\DBController.cs" />
+    <Compile Include="Forms\AllAdvertisments\AllAdsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllAdsForm.Designer.cs">
+    <Compile Include="Forms\AllAdvertisments\AllAdsForm.Designer.cs">
       <DependentUpon>AllAdsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\AuthForm\AuthForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\AuthForm\AuthForm.Designer.cs">
+      <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddNew.cs">
+    <Compile Include="Forms\AddAdvertisment\FormAddNew.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddNew.Designer.cs">
+    <Compile Include="Forms\AddAdvertisment\FormAddNew.Designer.cs">
       <DependentUpon>FormAddNew.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChangeAd.cs">
+    <Compile Include="Forms\ChangeAdvertisment\FormChangeAd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChangeAd.Designer.cs">
+    <Compile Include="Forms\ChangeAdvertisment\FormChangeAd.Designer.cs">
       <DependentUpon>FormChangeAd.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMyAds.cs">
+    <Compile Include="Forms\MyAdvertisments\FormMyAds.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMyAds.Designer.cs">
+    <Compile Include="Forms\MyAdvertisments\FormMyAds.Designer.cs">
       <DependentUpon>FormMyAds.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormWatchTheAd.cs">
+    <Compile Include="Forms\OpenAdvertisment\FormWatchTheAd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormWatchTheAd.Designer.cs">
+    <Compile Include="Forms\OpenAdvertisment\FormWatchTheAd.Designer.cs">
       <DependentUpon>FormWatchTheAd.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AllAdsForm.resx">
+    <EmbeddedResource Include="Forms\AllAdvertisments\AllAdsForm.resx">
       <DependentUpon>AllAdsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AuthForm\AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddNew.resx">
+    <EmbeddedResource Include="Forms\AddAdvertisment\FormAddNew.resx">
       <DependentUpon>FormAddNew.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChangeAd.resx">
+    <EmbeddedResource Include="Forms\ChangeAdvertisment\FormChangeAd.resx">
       <DependentUpon>FormChangeAd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMyAds.resx">
+    <EmbeddedResource Include="Forms\MyAdvertisments\FormMyAds.resx">
       <DependentUpon>FormMyAds.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormWatchTheAd.resx">
+    <EmbeddedResource Include="Forms\OpenAdvertisment\FormWatchTheAd.resx">
       <DependentUpon>FormWatchTheAd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -132,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
