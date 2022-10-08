@@ -35,6 +35,7 @@ namespace PIS_20_01
             this.labelAuthPass = new System.Windows.Forms.Label();
             this.textBoxAuthPass = new System.Windows.Forms.TextBox();
             this.buttonAuth = new System.Windows.Forms.Button();
+            this.buttonAuthGuest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelAuth
@@ -87,12 +88,24 @@ namespace PIS_20_01
             this.buttonAuth.TabIndex = 5;
             this.buttonAuth.Text = "Войти";
             this.buttonAuth.UseVisualStyleBackColor = true;
+            this.buttonAuth.Click += new System.EventHandler(this.buttonAuth_Click);
+            // 
+            // buttonAuthGuest
+            // 
+            this.buttonAuthGuest.Location = new System.Drawing.Point(17, 187);
+            this.buttonAuthGuest.Name = "buttonAuthGuest";
+            this.buttonAuthGuest.Size = new System.Drawing.Size(146, 63);
+            this.buttonAuthGuest.TabIndex = 6;
+            this.buttonAuthGuest.Text = "Войти как гость";
+            this.buttonAuthGuest.UseVisualStyleBackColor = true;
+            this.buttonAuthGuest.Click += new System.EventHandler(this.buttonAuthGuest_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 287);
+            this.Controls.Add(this.buttonAuthGuest);
             this.Controls.Add(this.buttonAuth);
             this.Controls.Add(this.textBoxAuthPass);
             this.Controls.Add(this.labelAuthPass);
@@ -114,6 +127,7 @@ namespace PIS_20_01
         private System.Windows.Forms.Label labelAuthPass;
         private System.Windows.Forms.TextBox textBoxAuthPass;
         private System.Windows.Forms.Button buttonAuth;
+        private System.Windows.Forms.Button buttonAuthGuest;
     }
 }
 

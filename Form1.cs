@@ -16,5 +16,17 @@ namespace PIS_20_01
         {
             InitializeComponent();
         }
+
+        private void buttonAuth_Click(object sender, EventArgs e)
+        {
+            Form formAllAds = new AllAdsForm();
+            formAllAds.ShowDialog();
+        }
+
+        private void buttonAuthGuest_Click(object sender, EventArgs e)
+        {
+            Form allAdsForm = new AllAdsForm("guest");
+            allAdsForm.ShowDialog();
+        }
     }
 }
