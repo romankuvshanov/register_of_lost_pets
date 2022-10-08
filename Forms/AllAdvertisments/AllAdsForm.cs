@@ -59,5 +59,10 @@ namespace PIS_20_01
             Form formAddNew = new FormAddNew();
             formAddNew.ShowDialog();
         }
+
+        private void AllAdsForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
