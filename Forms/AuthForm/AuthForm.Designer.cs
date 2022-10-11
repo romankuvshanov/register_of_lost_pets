@@ -37,16 +37,16 @@ namespace PIS_20_01
             this.textBoxAuthPass = new System.Windows.Forms.TextBox();
             this.buttonAuth = new System.Windows.Forms.Button();
             this.buttonAuthGuest = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelExitCross = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelAuth
             // 
             this.labelAuth.AutoSize = true;
-            this.labelAuth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAuth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelAuth.Location = new System.Drawing.Point(11, 8);
             this.labelAuth.Name = "labelAuth";
-            this.labelAuth.Size = new System.Drawing.Size(166, 29);
+            this.labelAuth.Size = new System.Drawing.Size(177, 29);
             this.labelAuth.TabIndex = 0;
             this.labelAuth.Text = "Авторизация";
             // 
@@ -103,17 +103,17 @@ namespace PIS_20_01
             this.buttonAuthGuest.UseVisualStyleBackColor = true;
             this.buttonAuthGuest.Click += new System.EventHandler(this.buttonAuthGuest_Click);
             // 
-            // label1
+            // labelExitCross
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(658, 8);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 37);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelExitCross.AutoSize = true;
+            this.labelExitCross.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelExitCross.Location = new System.Drawing.Point(658, 8);
+            this.labelExitCross.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelExitCross.Name = "labelExitCross";
+            this.labelExitCross.Size = new System.Drawing.Size(39, 37);
+            this.labelExitCross.TabIndex = 7;
+            this.labelExitCross.Text = "X";
+            this.labelExitCross.Click += new System.EventHandler(this.labelExitCross_Click);
             // 
             // AuthForm
             // 
@@ -121,7 +121,7 @@ namespace PIS_20_01
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(722, 244);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelExitCross);
             this.Controls.Add(this.buttonAuthGuest);
             this.Controls.Add(this.buttonAuth);
             this.Controls.Add(this.textBoxAuthPass);
@@ -147,7 +147,7 @@ namespace PIS_20_01
         private System.Windows.Forms.TextBox textBoxAuthPass;
         private System.Windows.Forms.Button buttonAuth;
         private System.Windows.Forms.Button buttonAuthGuest;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelExitCross;
     }
 }
 

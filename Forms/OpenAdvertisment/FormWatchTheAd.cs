@@ -19,7 +19,7 @@ namespace PIS_20_01
 
         private void buttonRespond_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Номер: +79990988987");
+            MessageBox.Show("Номер: +79990988987", "Контакты владельца");
         }
     }
 }

@@ -38,10 +38,11 @@ namespace PIS_20_01
         private void buttonAuthGuest_Click(object sender, EventArgs e)
         {
             Form allAdsForm = new AllAdsForm("guest");
-            allAdsForm.ShowDialog();
+            allAdsForm.Show();
+            this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelExitCross_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
