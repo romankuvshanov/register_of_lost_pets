@@ -29,6 +29,7 @@ namespace PIS_20_01
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddNew));
             this.labelAnimalCategory = new System.Windows.Forms.Label();
             this.textBoxAnimalCategory = new System.Windows.Forms.TextBox();
             this.textBoxAnimalName = new System.Windows.Forms.TextBox();
@@ -188,8 +189,9 @@ namespace PIS_20_01
             this.Controls.Add(this.textBoxAnimalCategory);
             this.Controls.Add(this.labelAnimalCategory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAddNew";
-            this.Text = "Добавить объявление";
+            this.Text = "Реестр объявлений о пропаже животных - Подать объявление";
             this.ResumeLayout(false);
             this.PerformLayout();
 

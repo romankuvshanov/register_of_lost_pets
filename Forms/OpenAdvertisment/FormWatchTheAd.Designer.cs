@@ -29,6 +29,7 @@ namespace PIS_20_01
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWatchTheAd));
             this.label6 = new System.Windows.Forms.Label();
             this.labelAnimalPasport = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -125,8 +126,9 @@ namespace PIS_20_01
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelAnimalCategory);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormWatchTheAd";
-            this.Text = "Просмотр объявления";
+            this.Text = "Реестр объявлений о пропаже животных - Просмотр объявления";
             this.ResumeLayout(false);
             this.PerformLayout();
 
